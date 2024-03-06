@@ -1,0 +1,28 @@
+!MaterialAsset
+Id: 7563e22e-ab82-482f-b6b6-7289b34b9e9e
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Attributes:
+    Surface: !MaterialNormalMapFeature
+        NormalMap: !ComputeTextureColor
+            Texture: 9150bf30-7c83-46b9-84a7-61dd5df59722:Models/trees/deciduous/apple/leaves_nrm
+            FallbackValue:
+                Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+            Swizzle: null
+    Diffuse: !MaterialDiffuseMapFeature
+        DiffuseMap: !ComputeTextureColor
+            Texture: 11a7f30f-4f7f-49e9-8f7d-4a385e68e299:Models/trees/deciduous/apple/leaves_sum
+            FallbackValue:
+                Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+            Swizzle: null
+    DiffuseModel: !MaterialDiffuseLambertModelFeature {}
+    Transparency: !MaterialTransparencyCutoffFeature
+        Alpha: !ComputeFloat
+            Value: 0.55
+    Overrides:
+        UVScale: {X: 1.0, Y: 1.0}
+Layers: {}

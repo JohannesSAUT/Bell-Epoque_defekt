@@ -1,0 +1,15 @@
+!Model
+Id: 3dd67650-cb3a-41f7-a346-80bf1ef301aa
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Bell Epoque_Arbeitsdateien/models/user_interface/gamer.x
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    382844396c91697fbd6333a904a8835c:
+        Name: material372
+        MaterialInstance:
+            Material: 40157563-a012-494c-861f-3d539c79dcf8:Models/gamer/material372
+Modifiers: {}
+~SourceHashes:
+    f3b7a6e7a20678849a46711c5d3f3a4b~../../../../../Bell Epoque_Arbeitsdateien/models/user_interface/gamer.x: 7e37c671547a88f558e7f4122888d455

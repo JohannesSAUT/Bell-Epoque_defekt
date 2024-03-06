@@ -1,0 +1,6 @@
+!Texture
+Id: c53cde55-8003-4630-abd0-1fb8f708404c
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Bell Epoque_Arbeitsdateien/models/chank_blank/grass_green_douwn_nrm.png
+Type: !NormalMapTextureType {}

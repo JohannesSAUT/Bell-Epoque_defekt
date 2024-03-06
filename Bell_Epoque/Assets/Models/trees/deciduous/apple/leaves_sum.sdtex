@@ -1,0 +1,9 @@
+!Texture
+Id: 11a7f30f-4f7f-49e9-8f7d-4a385e68e299
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Bell Epoque_Arbeitsdateien/models/trees/deciduous/apple/leaves_sum.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 0, G: 0, B: 0, A: 0}
+    Alpha: Explicit
+GenerateMipmaps: false

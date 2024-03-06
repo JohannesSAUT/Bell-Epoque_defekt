@@ -1,0 +1,7 @@
+!Texture
+Id: 9150bf30-7c83-46b9-84a7-61dd5df59722
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Bell Epoque_Arbeitsdateien/models/trees/deciduous/apple/leaves_nrm.png
+Type: !NormalMapTextureType {}
+GenerateMipmaps: false

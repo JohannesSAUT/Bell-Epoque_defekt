@@ -1,0 +1,19 @@
+!Model
+Id: a2db54e8-c47f-4047-a795-14963dd13271
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Bell Epoque_Arbeitsdateien/models/trees/deciduous/apple/tree.obj
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    e9fd0889780a02e04392c7922145c8c6:
+        Name: trunk
+        MaterialInstance:
+            Material: fc3b098f-58bd-4da3-8b18-b767feed49dc:Models/trees/deciduous/apple/trunk
+    defb9cbc145965438838b83bb839492c:
+        Name: leaves
+        MaterialInstance:
+            Material: 7563e22e-ab82-482f-b6b6-7289b34b9e9e:Models/trees/deciduous/apple/leaves
+Modifiers: {}
+~SourceHashes:
+    6a1b1877220e13559ccb1da8709b77e4~../../../../../../../Bell Epoque_Arbeitsdateien/models/trees/deciduous/apple/tree.obj: d65fa4ae00b976ef8e3edb5585ee9d3e

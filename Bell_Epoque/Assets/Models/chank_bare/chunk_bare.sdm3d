@@ -1,0 +1,19 @@
+!Model
+Id: f42e50e8-f129-4224-a058-207d01af66b1
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Bell Epoque_Arbeitsdateien/models/chank_blank/chunk_bare.x
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    8a2aaab4e75b28d3d2215b1df44239df:
+        Name: material22287
+        MaterialInstance:
+            Material: 58588052-b984-463a-a0c0-ec585d58bcb1:Models/chank_bare/chank_mount
+    d67c679d723f3e6aff175396ac23d058:
+        Name: material22293
+        MaterialInstance:
+            Material: 81fd6a07-f9ad-439b-abb6-aa05d1307a18:Models/chank_bare/material22293
+Modifiers: {}
+~SourceHashes:
+    7d4af34da8a786c2e0709dcb5276366f~../../../../../Bell Epoque_Arbeitsdateien/models/chank_blank/chunk_bare.x: b7ca42ab4543c3eb63d659d5dd29b53f

@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <ApplicationIcon>Resources\Icon.ico</ApplicationIcon>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Bell_Epoque</RootNamespace>
+
+    <OutputPath>..\Bin\Windows\$(Configuration)\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+
+    <!-- Force msbuild to check to rebuild this assembly instead of letting VS IDE guess -->
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Stride.CommunityToolkit" Version="1.0.0-preview.20" />
+    <PackageReference Include="Stride.Core.Assets.CompilerApp" Version="4.2.0.2067" />
+    <PackageReference Include="Stride.Engine" Version="4.2.0.2067" />
+    <PackageReference Include="Stride.Navigation" Version="4.2.0.2067" />
+    <PackageReference Include="Stride.Particles" Version="4.2.0.2067" />
+    <PackageReference Include="Stride.UI" Version="4.2.0.2067" />
+    <PackageReference Include="Stride.Video" Version="4.2.0.2067" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bell_Epoque\Bell_Epoque.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,265 @@
+!SceneAsset
+Id: 236c744c-9b6a-40f4-8c37-013511932409
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+ChildrenIds: []
+Offset: {X: 0.0, Y: 0.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! 4b42ffab-3921-445b-9604-503f4f753976
+        - ref!! 81ee0169-9aea-494e-817a-dc330a6663cd
+        - ref!! 022ee0f2-711f-4944-b39c-32b1e2613008
+        - ref!! d5e75368-69e7-4ab7-974c-d91049f88d05
+        - ref!! cad163ba-e911-4392-b313-c2f2dcf61b60
+        - ref!! ca798535-3aa1-4a53-8810-0999fc3eb39e
+        - ref!! 664c0c2a-ec36-4dbf-b62c-07f3ce38f089
+        - ref!! f90a1928-e9cc-4e15-8c07-82f3e4977a83
+        - ref!! 05582886-a3f8-4aa5-b929-8baaee3bc807
+    Parts:
+        -   Entity:
+                Id: 022ee0f2-711f-4944-b39c-32b1e2613008
+                Name: Ambient light
+                Components:
+                    3269bcce68bc6843ecfc448a4524ae8a: !TransformComponent
+                        Id: c3c0a739-4875-42ed-83c1-ede240a5264e
+                        Position: {X: 0.0, Y: 200.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2ab60ec3fed0e1786754e2d719f9c1e0: !LightComponent
+                        Id: 1380f2e4-67d9-47e9-9e08-05b642e75d5f
+                        Type: !LightAmbient
+                            Color: !ColorRgbProvider
+                                Value: {R: 0.64705884, G: 0.7882353, B: 0.9411765}
+        -   Entity:
+                Id: 05582886-a3f8-4aa5-b929-8baaee3bc807
+                Name: MyCamera
+                Components:
+                    42049ba45c51cbe3e26f4c599d78b22f: !TransformComponent
+                        Id: 37459f69-e403-4a7c-8840-b88d356caab9
+                        Position: {X: 0.0, Y: 105.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    0f386edb6d47929c5098dc65dce0b6ff: !CameraComponent
+                        Id: 53e51524-8e2d-4987-ab76-9145b88d2891
+                        Name: Cammera1
+                        Projection: Perspective
+                        Slot: c7ce68c6-2e12-494a-a855-5b0304969797
+                    b345b0da81dd498619104d1f593b3130: !RigidbodyComponent
+                        Id: b0f6bac5-7ab2-4743-9136-e320b249a3f6
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        IsKinematic: true
+                        Mass: 0.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: true
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            3afc79caf41725f9449c7c053ed9d76a: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 5.0, Y: 5.0, Z: 5.0}
+                                LocalOffset: {X: 0.0, Y: 5.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    ff978a57d0df3f5e124e91973789d67b: !Bell_Epoque.MouseCamController,Bell_Epoque
+                        Id: f1ca9d4c-ed1f-4d50-bd1d-4a6adc70941d
+                        RotationSpeed: {X: 1.0, Y: 1.0}
+                        SpeedFactor: 50.0
+                        ZoomFactor: 5.0
+        -   Entity:
+                Id: 4b42ffab-3921-445b-9604-503f4f753976
+                Name: Directional light
+                Components:
+                    a9047881d1cda88184c66180ee2dcb3e: !TransformComponent
+                        Id: 4f7650c3-ff7d-4d62-811f-a2abac90da3f
+                        Position: {X: 0.0, Y: 1100.0, Z: 0.0}
+                        Rotation: {X: -0.38268346, Y: 0.0, Z: 0.0, W: 0.9238795}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2d364fd9115191791ed2df268b2245ac: !LightComponent
+                        Id: a5eab7fc-b365-46f5-8cd2-41f3fe57a383
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow: !LightDirectionalShadowMap
+                                Enabled: true
+                                Filter: !LightShadowMapFilterTypePcf
+                                    FilterSize: Filter5x5
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters: {}
+                        Intensity: 10.0
+        -   Folder: plants
+            Entity:
+                Id: 664c0c2a-ec36-4dbf-b62c-07f3ce38f089
+                Name: tree
+                Components:
+                    0905fcc7691afe15400a6674d6a6cd8d: !TransformComponent
+                        Id: 3b450ceb-66e1-43e6-9932-d41b56eae406
+                        Position: {X: -70.07163, Y: 111.188965, Z: -69.54337}
+                        Rotation: {X: 0.0, Y: -0.6108242, Z: 0.0, W: 0.7917662}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    9dc3012aa04cca2c4504f8ee0655af2c: !ModelComponent
+                        Id: 35497630-0be0-4ddf-a773-2391a2d31e7a
+                        Model: a2db54e8-c47f-4047-a795-14963dd13271:Models/trees/deciduous/apple/tree
+                        Materials: {}
+                    0a4c5a22fbcd9dd40fa74b2821247385: !StaticColliderComponent
+                        Id: 28b647a4-806e-4d05-acb3-36920efa46a0
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a810e7c3971e4a9600f95eb033cd9a34: !CylinderColliderShapeDesc
+                                Height: 5.0
+                                LocalOffset: {X: 0.0, Y: 2.5, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+        -   Entity:
+                Id: 81ee0169-9aea-494e-817a-dc330a6663cd
+                Name: Skybox
+                Components:
+                    56a40a8c6ffc2f907b4049aee02941e6: !TransformComponent
+                        Id: a9003f83-4920-41a7-9fae-66ac6d164941
+                        Position: {X: 0.0, Y: 2.0, Z: -2.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    240ac36b794f1d4cfd315a982aa92c7a: !BackgroundComponent
+                        Id: 0b67bf6a-70cd-463f-8810-9080dcb7a9a2
+                        Texture: a4a47eee-af4b-40d1-ac01-9502b9446369:Models/sky
+        -   Entity:
+                Id: ca798535-3aa1-4a53-8810-0999fc3eb39e
+                Name: gamer
+                Components:
+                    04d8e1ed95fac503cb3e33a266d8da23: !TransformComponent
+                        Id: 66c1b9b3-fad3-443a-ae7a-78c6c5ca68a0
+                        Position: {X: -76.58465, Y: 154.97673, Z: -80.16501}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    fc0d8af96ca92c522bfb1af2dc596195: !ModelComponent
+                        Id: 399a908e-33c4-42da-b3a3-c461a420d483
+                        Model: 3dd67650-cb3a-41f7-a346-80bf1ef301aa:Models/gamer/gamer
+                        Materials: {}
+                    688bf3d2abbacdea8b2b5a32766f77c6: !RigidbodyComponent
+                        Id: 483a5196-8bc8-498b-a644-5f889ab89a4a
+                        CanSleep: false
+                        Restitution: 0.2
+                        Friction: 0.8
+                        RollingFriction: 0.2
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        IsKinematic: false
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            eb0e272ab179043ece0b589030964844: !ConeColliderShapeDesc
+                                Height: 1.9
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+        -   Folder: plants
+            Entity:
+                Id: cad163ba-e911-4392-b313-c2f2dcf61b60
+                Name: tree
+                Components:
+                    0905fcc7691afe15400a6674d6a6cd8d: !TransformComponent
+                        Id: 76253b04-ae96-4f18-9abb-c5f0004eafb7
+                        Position: {X: -74.97159, Y: 113.77184, Z: -72.828384}
+                        Rotation: {X: 0.0, Y: 0.8203736, Z: 0.0, W: 0.5718279}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    9dc3012aa04cca2c4504f8ee0655af2c: !ModelComponent
+                        Id: 5a8c1596-3011-4c33-ab43-097fd757a0a2
+                        Model: a2db54e8-c47f-4047-a795-14963dd13271:Models/trees/deciduous/apple/tree
+                        Materials: {}
+                    0a4c5a22fbcd9dd40fa74b2821247385: !StaticColliderComponent
+                        Id: 6a7e7325-09b9-471c-b19c-4f8c2ef7c395
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a810e7c3971e4a9600f95eb033cd9a34: !CylinderColliderShapeDesc
+                                Height: 5.0
+                                LocalOffset: {X: 0.0, Y: 2.5, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+        -   Entity:
+                Id: d5e75368-69e7-4ab7-974c-d91049f88d05
+                Name: chunk_bare
+                Components:
+                    61cb41bcf675b5976fdf205b5dfbfe52: !TransformComponent
+                        Id: 5c156495-6cdc-405c-9e74-06123da9f2eb
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    3d405ea8d63c39804f499fee27be49da: !ModelComponent
+                        Id: ac9308ec-797e-493c-924c-3de3a7b308cb
+                        Model: f42e50e8-f129-4224-a058-207d01af66b1:Models/chank_bare/chunk_bare
+                        Materials: {}
+                    6ff40c1563850d40618ce458c54ec1d8: !StaticColliderComponent
+                        Id: cc6ab80a-74af-4d96-9165-da8a7818f1ba
+                        CanSleep: true
+                        Restitution: 0.2
+                        Friction: 0.8
+                        RollingFriction: 0.2
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            68eff7345e0639b6caff1f75858edd49: !StaticMeshColliderShapeDesc
+                                Model: f42e50e8-f129-4224-a058-207d01af66b1:Models/chank_bare/chunk_bare
+        -   Folder: plants
+            Entity:
+                Id: f90a1928-e9cc-4e15-8c07-82f3e4977a83
+                Name: tree
+                Components:
+                    0905fcc7691afe15400a6674d6a6cd8d: !TransformComponent
+                        Id: d84527bc-0617-4f1d-b055-e054a26a8b15
+                        Position: {X: -64.89481, Y: 108.479904, Z: -66.26831}
+                        Rotation: {X: 0.0, Y: -0.69313, Z: 0.0, W: 0.7208126}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    9dc3012aa04cca2c4504f8ee0655af2c: !ModelComponent
+                        Id: 5734cea1-21de-4448-8938-86686bce5b41
+                        Model: a2db54e8-c47f-4047-a795-14963dd13271:Models/trees/deciduous/apple/tree
+                        Materials: {}
+                    0a4c5a22fbcd9dd40fa74b2821247385: !StaticColliderComponent
+                        Id: 407704ec-8ebe-4210-bf9c-403b9b714744
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a810e7c3971e4a9600f95eb033cd9a34: !CylinderColliderShapeDesc
+                                Height: 5.0
+                                LocalOffset: {X: 0.0, Y: 2.5, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}

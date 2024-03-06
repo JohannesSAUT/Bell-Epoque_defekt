@@ -1,0 +1,8 @@
+!Texture
+Id: 2c54d968-3e0a-4606-934a-b5094e5092d0
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Bell Epoque_Arbeitsdateien/models/chank_blank/grass_green_douwn_bmp.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+    PremultiplyAlpha: false

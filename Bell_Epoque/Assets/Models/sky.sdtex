@@ -1,0 +1,7 @@
+!Texture
+Id: a4a47eee-af4b-40d1-ac01-9502b9446369
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Bell Epoque_Arbeitsdateien/texturs/sky.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

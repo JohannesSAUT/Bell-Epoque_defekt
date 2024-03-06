@@ -1,0 +1,7 @@
+!Texture
+Id: 34419cf7-7746-442e-a4e9-7731b07dd69c
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../Bell Epoque_Arbeitsdateien/models/trees/deciduous/apple/trunk_nrm.png
+Type: !NormalMapTextureType {}
+GenerateMipmaps: false

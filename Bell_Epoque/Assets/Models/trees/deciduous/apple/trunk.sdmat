@@ -1,0 +1,32 @@
+!MaterialAsset
+Id: fc3b098f-58bd-4da3-8b18-b767feed49dc
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Attributes:
+    Surface: !MaterialNormalMapFeature
+        NormalMap: !ComputeTextureColor
+            Texture: 34419cf7-7746-442e-a4e9-7731b07dd69c:Models/trees/deciduous/apple/trunk_nrm
+            FallbackValue:
+                Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+            Swizzle: null
+    Diffuse: !MaterialDiffuseMapFeature
+        DiffuseMap: !ComputeTextureColor
+            Texture: 29f9a6df-564d-4354-9d9c-2a62f5c71784:Models/trees/deciduous/apple/trunk_bmp
+            FallbackValue:
+                Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+            Swizzle: null
+    DiffuseModel: !MaterialDiffuseLambertModelFeature {}
+    Transparency: !MaterialTransparencyBlendFeature
+        Enabled: false
+        Alpha: !ComputeFloat
+            Value: 0.5
+        Tint: !ComputeColor
+            Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+        DitheredShadows: true
+    Overrides:
+        UVScale: {X: 1.0, Y: 1.0}
+Layers: {}
